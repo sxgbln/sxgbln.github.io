@@ -1,0 +1,170 @@
+﻿/*code*/
+
+.identifier {
+    text-align: center;
+}
+
+/* Default color for desktop */
+.identifier {
+    color: blue;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .identifier {
+        color: red;
+    }
+}
+
+
+.carousel-img {
+    width: 50%; /* Set the desired width */
+    height: 50%; /* Set the desired height */
+}
+
+/*dont touch previus one*/
+
+/*video*/
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #333;
+    background-size: cover;
+    background-position: center center;
+}
+
+    .video:before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+
+/*RECETAS RECETAS RECETAS*/
+
+.ingredient-item {
+    margin: 10px;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+
+/*recetas album container*/
+
+/* Default styles for all devices */
+
+/* Styles for DESKTOP DESKTOP DESKTOPdevices */
+@media screen and (min-width: 768px) {
+    .responsive-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: black;
+        text-align: center;
+        text-justify: auto;
+        font-family: 'Noto Serif Sinhala', serif;
+    }
+
+    .text-container {
+        /**/
+
+        margin-left: 20vw;
+        margin-right: 20vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+       
+       
+    }
+
+    .company h4 {
+        /**/
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Noto Serif Lao', serif;
+        color: black;
+    }
+
+    .company {
+        /**/
+        margin-top: 2.5rem;
+        
+    }
+
+  
+
+      
+}
+
+/* Styles for MOBILE MOBILE MOBILE devices */
+@media screen and (max-width: 767px) {
+
+    .responsive-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: black;
+        text-align: center;
+        text-justify: auto;
+        font-family: 'Noto Serif Sinhala', serif;
+    }
+
+    .text-container {
+        /**/
+
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+       
+    }
+
+    .company h4 {
+        /**/
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Noto Serif Lao', serif;
+        
+    }
+
+    .company {
+        /**/
+        margin-top: 1.5rem;
+        
+    }
+
+      
+    
+     
+}
+
+
+
+/*ANIMISTA*/
+
+
+.nav {
+    margin-bottom: 1.5rem;
+}
+
+#my-footer{
+    margin-top: 2rem;
+}
