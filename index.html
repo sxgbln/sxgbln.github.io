@@ -1,616 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JD8ZK9F2B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7JD8ZK9F2B');
-</script>
-   
-    <meta charset="utf-8" />
-    <title>Recetas</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--import bootstrap-->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-
-    <!--import sinhala-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Josefin+Sans:wght@400;500;700&family=Noto+Serif+Lao:wght@300;500&family=Noto+Serif+Sinhala:wght@500&display=swap" rel="stylesheet">
-
-    <!--import noto serif lao-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Josefin+Sans:wght@400;500;700&family=Noto+Serif+Lao:wght@300;500&display=swap" rel="stylesheet">
-
-    <link href="style.css" rel="stylesheet" />
-
-
-
+    <title>Gestión de Archivos Multimedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .feature-box {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <!--body-->
 
-    <div class="company">
-        <h4>Página web de prueba</h4>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Multimedia Manager</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Funciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <!-- Nueva pestaña GUI -->
+        <li class="nav-item">
+          <a class="nav-link" href="gui.html">GUI</a>
+        </li>
+        <!-- Nueva pestaña Cuenta -->
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Cuenta</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-
-
-    <!--end company name-->
-    <!--image-->
-    <!--create hero-->
-
-    <div class="text-container">
-        <p class="responsive-text">
-            Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, no tengo nada que hacer nada que hacer.
-        </p>
+<!-- Sección de héroe -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4">Gestión y Versionado de Archivos Multimedia</h1>
+        <p class="lead">Simplifica el control de tus archivos multimedia y colabora de manera eficiente con tu equipo.</p>
+        <a href="#" class="btn btn-primary btn-lg">Empieza Ahora</a>
     </div>
+</section>
 
-
-
-
-    <!--end hero-->
-    <!--3 link navbar-->
-    <!--end links-->
-
-
-    <ul class="nav nav-underline justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Activo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Videos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled">Documentos</a>
-        </li>
-    </ul>
-
-
-
-
-
-
-
-
-
-
-    <div class="container" style="padding-right: 10px; padding-left: 10px;">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-            <!--CARD-->
-            <div class="col mx-auto">
-                <div class="card">
-                    <img src="mifolder/sopa_frijoles.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sopa de frijoles</h5>
-                        <p class="card-text">¡La sopa de frijoles salvadoreña es una deliciosa y reconfortante sopa hecha con frijoles rojos, verduras y carne, servida caliente y acompañada de tortillas de maíz! ¡Una delicia tradicional de El Salvador que no puedes perderte!</p>
-                        <!--next-->
-                        <!-- start ingredients modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal0" style="margin-bottom: 10px;">
-                            Ver ingredientes
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel0" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel0">Ingredientes</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Frijoles cocidos, ajo, cebolla, comino, plátanos maduros, yuca, chicharrón, crema</p>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end ingredients modal-->
-                        <!-- start step modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="margin-bottom: 10px;">
-                            Ver pasos
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel1">Pasos</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <ol>
-                                            <li>Remojar los frijoles rojos en agua fría durante al menos 8 horas.</li>
-                                            <li>Cocinar los frijoles remojados en una olla con agua y sal hasta que estén tiernos.</li>
-                                            <li>En una sartén aparte, sofreír cebolla, ajo y comino.</li>
-                                            <li>Añadir las verduras (zanahoria, apio y papa) y saltearlas junto con la mezcla de cebolla y ajo hasta que estén tiernas.</li>
-                                            <li>Mezclar las verduras salteadas con los frijoles cocidos.</li>
-                                            <li>En otra sartén, cocinar la carne (pollo o cerdo) y agregarla a la mezcla de frijoles y verduras.</li>
-                                            <li>Servir caliente y acompañar con tortillas de maíz.</li>
-                                        </ol>
-
-                                        <!-- add your steps here -->
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end method modal-->
-                    </div>
+<!-- Sección de funciones -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box">
+                    <h4>Control de Versiones</h4>
+                    <p>Sigue y restaura versiones previas de archivos multimedia con facilidad.</p>
                 </div>
             </div>
-            <!--END CARD-->
-            <!--CARD-->
-            <div class="col mx-auto">
-                <div class="card">
-                    <img src="mifolder/sopa_pata.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sopa de pata</h5>
-                        <p class="card-text">La sopa de pata salvadoreña es un plato tradicional hecho con patas de res cocidas en caldo con especias y verduras. ¡Una deliciosa combinación de sabores y texturas que te hará sentir en El Salvador!</p>
-                        <!--next-->
-                        <!-- start ingredients modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-bottom: 10px;">
-                            Ver ingredientes
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Ingredientes</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Patas de res, agua, sal, ajo, cebolla, comino, yuca, plátano verde, chayote.</p>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end ingredients modal-->
-                        <!-- start step modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="margin-bottom: 10px;">
-                            Ver pasos
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel3">Pasos</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <!-- add your steps here -->
-                                        <ol>
-                                            <li>Limpia y lava las patas de res.</li>
-                                            <li>Cocina las patas de res en una olla grande con agua y sal hasta que estén suaves.</li>
-                                            <li>En otra sartén, sofríe ajo y cebolla.</li>
-                                            <li>Agrega comino y continúa cocinando hasta que las cebollas estén translúcidas.</li>
-                                            <li>Corta las verduras (yuca, plátano verde, chayote) en pedazos grandes y agrégalas a la olla de las patas de res.</li>
-                                            <li>Añade la mezcla de cebolla y ajo a la olla de las patas de res y verduras.</li>
-                                            <li>Cocina a fuego lento hasta que las verduras estén suaves y la sopa tenga un sabor delicioso.</li>
-                                            <li>Sirve caliente y disfruta.</li>
-                                        </ol>
-
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end method modal-->
-                    </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box">
+                    <h4>Colaboración en Tiempo Real</h4>
+                    <p>Trabaja en equipo sin sobrescribir cambios importantes.</p>
                 </div>
             </div>
-            <!--END CARD-->
-            <!--CARD-->
-            <div class="col mx-auto">
-                <div class="card">
-                    <img src="mifolder/sopa_gallina.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sopa de gallina</h5>
-                        <p class="card-text">La sopa de gallina salvadoreña es un plato tradicional lleno de sabor y nostalgia. Se prepara con gallina cocida lentamente en caldo con verduras, como zanahoria, apio y yuca. ¡No te pierdas esta deliciosa sopa salvadoreña!</p>
-                        <!--next-->
-                        <!-- start ingredients modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="margin-bottom: 10px;">
-                            Ver ingredientes
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredientes</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Gallina, agua, sal, ajo, cebolla, apio, zanahoria, yuca</p>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end ingredients modal-->
-                        <!-- start step modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="margin-bottom: 10px;">
-                            Ver pasos
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">Pasos</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <!-- add your steps here -->
-
-                                        <ol>
-                                            <li>Limpia y corta la gallina en pedazos.</li>
-                                            <li>En una olla grande, coloca la gallina y cúbrelo con agua.</li>
-                                            <li>Agrega sal al gusto, ajo, cebolla, apio, zanahoria y yuca.</li>
-                                            <li>Cocina a fuego medio-bajo hasta que la gallina esté tierna y el caldo esté bien sazonado.</li>
-                                            <li>Retira la gallina y desmenuza la carne.</li>
-                                            <li>Agrega la carne de gallina desmenuzada de nuevo en la olla.</li>
-                                            <li>Opcionalmente, puedes añadir chayote, plátano maduro, cilantro y pimienta negra para dar más sabor y variedad a la sopa.</li>
-                                            <li>Continúa cocinando por unos 10-15 minutos más hasta que los vegetales estén suaves.</li>
-                                            <li>Sirve caliente y disfruta.</li>
-                                        </ol>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end method modal-->
-                    </div>
-                </div>
-            </div>
-            <!--END CARD-->
-            <!--CARD-->
-            <div class="col mx-auto">
-                <div class="card">
-                    <img src="mifolder/dummy_1280x720.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sopa de gallina</h5>
-                        <p class="card-text">La sopa de gallina salvadoreña es un plato tradicional lleno de sabor y nostalgia. Se prepara con gallina cocida lentamente en caldo con verduras, como zanahoria, apio y yuca. ¡No te pierdas esta deliciosa sopa salvadoreña!</p>
-                        <!--next-->
-                        <!-- start ingredients modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="margin-bottom: 10px;">
-                            Ver ingredientes
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredientes</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Gallina, agua, sal, ajo, cebolla, apio, zanahoria, yuca</p>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end ingredients modal-->
-                        <!-- start step modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="margin-bottom: 10px;">
-                            Ver pasos
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">Pasos</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <!-- add your steps here -->
-
-                                        <ol>
-                                            <li>Limpia y corta la gallina en pedazos.</li>
-                                            <li>En una olla grande, coloca la gallina y cúbrelo con agua.</li>
-                                            <li>Agrega sal al gusto, ajo, cebolla, apio, zanahoria y yuca.</li>
-                                            <li>Cocina a fuego medio-bajo hasta que la gallina esté tierna y el caldo esté bien sazonado.</li>
-                                            <li>Retira la gallina y desmenuza la carne.</li>
-                                            <li>Agrega la carne de gallina desmenuzada de nuevo en la olla.</li>
-                                            <li>Opcionalmente, puedes añadir chayote, plátano maduro, cilantro y pimienta negra para dar más sabor y variedad a la sopa.</li>
-                                            <li>Continúa cocinando por unos 10-15 minutos más hasta que los vegetales estén suaves.</li>
-                                            <li>Sirve caliente y disfruta.</li>
-                                        </ol>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end method modal-->
-                    </div>
-                </div>
-            </div>
-            <!--END CARD-->
-
-
-            <!--CARD-->
-            <div class="col mx-auto">
-                <div class="card">
-                    <img src="mifolder/dummy_1280x720.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sopa de gallina</h5>
-                        <p class="card-text">La sopa de gallina salvadoreña es un plato tradicional lleno de sabor y nostalgia. Se prepara con gallina cocida lentamente en caldo con verduras, como zanahoria, apio y yuca. ¡No te pierdas esta deliciosa sopa salvadoreña!</p>
-                        <!--next-->
-                        <!-- start ingredients modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="margin-bottom: 10px;">
-                            Ver ingredientes
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredientes</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Gallina, agua, sal, ajo, cebolla, apio, zanahoria, yuca</p>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end ingredients modal-->
-                        <!-- start step modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="margin-bottom: 10px;">
-                            Ver pasos
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">Pasos</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <!-- add your steps here -->
-
-                                        <ol>
-                                            <li>Limpia y corta la gallina en pedazos.</li>
-                                            <li>En una olla grande, coloca la gallina y cúbrelo con agua.</li>
-                                            <li>Agrega sal al gusto, ajo, cebolla, apio, zanahoria y yuca.</li>
-                                            <li>Cocina a fuego medio-bajo hasta que la gallina esté tierna y el caldo esté bien sazonado.</li>
-                                            <li>Retira la gallina y desmenuza la carne.</li>
-                                            <li>Agrega la carne de gallina desmenuzada de nuevo en la olla.</li>
-                                            <li>Opcionalmente, puedes añadir chayote, plátano maduro, cilantro y pimienta negra para dar más sabor y variedad a la sopa.</li>
-                                            <li>Continúa cocinando por unos 10-15 minutos más hasta que los vegetales estén suaves.</li>
-                                            <li>Sirve caliente y disfruta.</li>
-                                        </ol>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end method modal-->
-                    </div>
-                </div>
-            </div>
-            <!--END CARD-->
-
-
-            <!--CARD-->
-            <div class="col mx-auto">
-                <div class="card">
-                    <img src="mifolder/dummy_1280x720.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sopa de gallina</h5>
-                        <p class="card-text">La sopa de gallina salvadoreña es un plato tradicional lleno de sabor y nostalgia. Se prepara con gallina cocida lentamente en caldo con verduras, como zanahoria, apio y yuca. ¡No te pierdas esta deliciosa sopa salvadoreña!</p>
-                        <!--next-->
-                        <!-- start ingredients modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="margin-bottom: 10px;">
-                            Ver ingredientes
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredientes</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Gallina, agua, sal, ajo, cebolla, apio, zanahoria, yuca</p>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end ingredients modal-->
-                        <!-- start step modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="margin-bottom: 10px;">
-                            Ver pasos
-                        </button>
-
-                        <!-- Modal  -->
-                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">Pasos</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <!-- add your steps here -->
-
-                                        <ol>
-                                            <li>Limpia y corta la gallina en pedazos.</li>
-                                            <li>En una olla grande, coloca la gallina y cúbrelo con agua.</li>
-                                            <li>Agrega sal al gusto, ajo, cebolla, apio, zanahoria y yuca.</li>
-                                            <li>Cocina a fuego medio-bajo hasta que la gallina esté tierna y el caldo esté bien sazonado.</li>
-                                            <li>Retira la gallina y desmenuza la carne.</li>
-                                            <li>Agrega la carne de gallina desmenuzada de nuevo en la olla.</li>
-                                            <li>Opcionalmente, puedes añadir chayote, plátano maduro, cilantro y pimienta negra para dar más sabor y variedad a la sopa.</li>
-                                            <li>Continúa cocinando por unos 10-15 minutos más hasta que los vegetales estén suaves.</li>
-                                            <li>Sirve caliente y disfruta.</li>
-                                        </ol>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--end method modal-->
-                    </div>
-                </div>
-            </div>
-            <!--END CARD-->
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-
-
-    <div class="empty-space" style="margin: 10px;"></div>
-
-   
-    <!--footer-->
-
-    <footer class="bg-dark text-white py-3" id="my-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>About Us</h4>
-                    <p>We are a company dedicated to providing high-quality products and services to our customers. Página hecha por Ricardo González para probar responsividad de bootstrap y primer intento de css y google fonts!</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Contact Us</h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown, USA</li>
-                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@mycompany.com</li>
-                    </ul>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box">
+                    <h4>Seguridad y Privacidad</h4>
+                    <p>Protege tus archivos con cifrado y controles de acceso basados en roles.</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!--ejd footer-->
+<!-- Sección de precios -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Planes de Precios</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Básico</h5>
+                        <p class="card-text">$9.99/mes</p>
+                        <a href="#" class="btn btn-outline-primary">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro</h5>
+                        <p class="card-text">$19.99/mes</p>
+                        <a href="#" class="btn btn-outline-primary">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Empresa</h5>
+                        <p class="card-text">$49.99/mes</p>
+                        <a href="#" class="btn btn-outline-primary">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+        <p>&copy; 2024 Multimedia Manager. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
-
-    <!--import bootstrap js-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-
-
-    <!--end js import-->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
